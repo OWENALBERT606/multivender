@@ -1,3 +1,4 @@
+import CustomDataTable from '@/components/backoffice/CustomDataTable'
 import Heading from '@/components/backoffice/Heading'
 import LargeCards from '@/components/backoffice/LargeCards'
 import SalesCharts from '@/components/backoffice/SalesCharts'
@@ -9,12 +10,16 @@ export default function page() {
     <div className='bg-slate-900' >
         <Heading title="dashboard overview" />
         <LargeCards/>
-       <SmallCards/>
-       <SalesCharts/>
-
+        
         {/* large cards */}
-        {/* charts */}
-        {/* recent orders table */}
+       <SmallCards/>
+       {/* charts */}
+       <SalesCharts/>
+       {/* recent orders table */}
+       <CustomDataTable/>
+
+        
+        
     </div>
   )
 }
