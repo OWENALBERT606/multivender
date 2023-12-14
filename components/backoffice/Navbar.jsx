@@ -10,6 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { ThemeSwitcherBtn } from '../ThemeSwitcherBtn'
 
 
 export default function Navbar() {
@@ -18,10 +19,8 @@ export default function Navbar() {
         <div className="menu">
             <button><Menu/></button>
         </div>
-
-        <div className="flex space-x-3 text-green-600">
-            <button><Sun/></button>
-            
+        <div className="flex items-center justify-center space-x-3 text-green-600">
+          <button className='flex items-center'> <ThemeSwitcherBtn/></button>
 <button type="button" className="relative inline-flex items-center p-3 text-sm font-medium text-center text-green-600  rounded-lg hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:ring dark:focus:ring-white">
 
 <DropdownMenu>

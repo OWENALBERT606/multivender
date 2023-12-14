@@ -11,7 +11,7 @@ export default function Layout({children}) {
         <div className='w-full' >
             {/* header */}
            <Navbar/>
-            <main className='mt-16 bg-slate-900 ml-60 h-screen' >
+            <main className='mt-16 bg-white dark:bg-slate-900 ml-60 h-screen' >
                 {children}
             </main>
             {/* main pages */}
