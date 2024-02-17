@@ -30,7 +30,7 @@ export default function SmallCards() {
     // <Loader2/>
   ]
   return (
-<div className='grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-3 px-4 py-2       lg-grid-cols-3 mt-8'>
+<div className='grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-3 px-8 py-2       lg-grid-cols-3 mt-8'>
         {/* card */}
         {
           orderStatus.map((data,i)=>{

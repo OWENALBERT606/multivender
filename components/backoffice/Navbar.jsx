@@ -13,11 +13,11 @@ import {
 import { ThemeSwitcherBtn } from '../ThemeSwitcherBtn'
 
 
-export default function Navbar() {
+export default function Navbar({setShowSidbar,showSidebar}) {
   return (
-    <div className='flex justify-between px-8 py-8 items-center bg-slate-700 text-slate-50 h-20 fixed top-0 left-60 w-full z-50 pr-[20rem]'>
+    <div className='flex justify-between px-8 py-8 items-center bg-slate-700 text-slate-50 h-20 fixed top-0 left-64 w-screen lg:w-full z-50 pr-[20rem]'>
         <div className="menu">
-            <button><Menu/></button>
+            <button onClick={()=>setShowSidbar(!showSidebar)} ><Menu/></button>
         </div>
         <div className="flex items-center justify-center space-x-3 text-green-600">
           <button className='flex items-center'> <ThemeSwitcherBtn/></button>

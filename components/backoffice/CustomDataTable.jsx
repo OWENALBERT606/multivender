@@ -13,7 +13,7 @@ export default function CustomDataTable() {
     const itemEnd = endIndex;
 
   return (
-    <div className='px-6 py-4 flex flex-col gapt-4'>
+    <div className='px-8 py-4 flex flex-col gapt-4'>
         <h2 className="text-xl font-bold mb-4 text-white">Recent names</h2>
 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
