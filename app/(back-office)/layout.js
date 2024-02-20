@@ -10,7 +10,7 @@ export default function Layout({children}) {
         {/* sidebar */}
        <Sidebar showSidebar={showSidebar} />
         {/* main body */}
-        <div className='w-full' >
+        <div className='w-full'>
             {/* header */}
            <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
             <main className='mt-16 min-h-screen bg-white dark:bg-slate-950 ml-60 py-1' >

@@ -9,7 +9,7 @@ import { generateSlug } from '@/lib/generateSlug'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
-export default function NewCategory() {
+export default function NewBanner() {
 
   const [imageUrl,setImageUrl]=useState("");
   const [loading,setLoading]=useState("false")
@@ -22,7 +22,7 @@ async function onSubmit(data){
   data.slug=slug
   data.imageUrl=imageUrl
   console.log(data);
-  makePostRequest(setLoading, "api/categories", data, "Category", reset
+  makePostRequest(setLoading, "api/banners", data, "Banner", reset
   );
   setImageUrl("")
 }
@@ -30,33 +30,35 @@ async function onSubmit(data){
 
   return (
     <div className='ml-4 mt-20 min-h-full'>
-      <FormHeader title="New Category"/>
+      <FormHeader title="New Banner"/>
       <form onSubmit={handleSubmit(onSubmit)}
         className="w-full m-4 max-w-5xl p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto my-3">
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <TextInput
-            label="Category Title"
+            label="Banner title"
             name="title"
             register={register}
             errors={errors}
             />
-            <TextareaInput
-            label="Category description"
-            name="description"
+            <TextInput
+            label="Banner Link"
+            name="link"
             register={register}
             errors={errors}
-
             />
+
+            {/* configure this endpoint in the core js */}
             <Imageinput
-          label="Category Image"
+          label="Banner Image"
+          type="url"
           imageUrl={imageUrl}
           setImageUrl={setImageUrl}
-          endpoint="categoryImageUploader"
+          endpoint="bannerImageUploader"
           />
           </div>
           <SubmitButton
           isLoading={false}
-          buttonTitle="Create Category"
+          buttonTitle="Create Banner"
           LoadingButtonTitle="Saving category please wait........."
           />
           

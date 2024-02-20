@@ -71,11 +71,6 @@ export default function Sidebar({showSidebar}) {
       url:"/dashboard/categories"
     },
     {
-      title:"Attributes",
-      icon:SendToBack,
-      url:"/dashboard/attributes"
-    },
-    {
       title:"Coupons",
       icon:ScanSearch,
       url:"/dashboard/coupons"
@@ -83,7 +78,7 @@ export default function Sidebar({showSidebar}) {
     {
       title:"Store slides",
       icon:List,
-      url:"/dashboard/storeslides"
+      url:"/dashboard/banners"
     }
   ]
   const [openMenu, setOpenMenu]=useState(false);
